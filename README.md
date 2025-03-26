@@ -114,3 +114,13 @@ plt.xlabel('Sepal Length')
 plt.ylabel('Sepal Width')
 plt.title('Clusters del conjunto de datos Iris')
 plt.show()
+```
+
+---
+
+## Material de Apoyo
+
+Aquí encontrarás algunos recursos útiles para profundizar en el tema de clustering con K-Means en Python:
+
+- [Ejemplo de clustering con K-Means en Python - Exponentis](https://exponentis.es/ejemplo-de-clustering-con-k-means-en-python)
+- [Video tutorial sobre K-Means en YouTube](https://www.youtube.com/watch?v=R4DHQs8hi0g)
