@@ -5,6 +5,56 @@ Este código realiza un análisis de clustering en el conjunto de datos Iris uti
 
 ---
 
+## Recomendaciones para ejecutar el proyecto
+
+Para asegurarte de que el proyecto funcione correctamente en tu máquina, es recomendable crear un entorno virtual y luego instalar las dependencias necesarias. A continuación, te mostramos cómo hacerlo en **Windows** y **Mac**.
+
+### 1. Crear un entorno virtual
+
+#### En Windows:
+1. Abre la terminal (Command Prompt o PowerShell).
+2. Navega hasta la carpeta de tu proyecto:
+```bash
+cd ruta/del/proyecto
+```
+3. Crea un entorno virtual:
+```bash
+python -m venv venv
+```
+4. Activa el entorno virtual:
+```bash
+.\venv\Scripts\activate
+```
+
+#### En Mac:
+1. Abre la terminal.
+2. Navega hasta la carpeta de tu proyecto:
+```bash
+cd ruta/del/proyecto
+```
+3. Crea un entorno virtual:
+```bash
+python3 -m venv venv
+```
+4. Activa el entorno virtual:
+```bash
+source venv/bin/activate
+```
+
+### 2. Instalar las dependencias
+
+Con el entorno virtual activado, instala las dependencias necesarias desde el archivo requirements.txt:
+
+1. Asegúrate de tener el archivo requirements.txt en la raíz de tu proyecto.
+2. Instala las dependencias:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Codigo
+
 ## 1. Importación de Librerías
 ```python
 from sklearn import datasets, preprocessing
