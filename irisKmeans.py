@@ -114,12 +114,6 @@ diccionario_colores = {0:'black', 1:'purple', 2:'blue', 3:'orange', 4:'pink', 5:
 colores_clusters = [diccionario_colores[i] for i in cluster_labels]
 #print(colores_clusters)
 
-#Visualizacion de colores y especies
-indice = 0
-for i in iris.target_names:
-    print(f'{i} : {diccionario_colores.get(indice)}')
-    indice += 1
-
 #Graficamos los clusters
 plt.scatter(df_escalado.iloc[:, 0], df_escalado.iloc[:, 1], c=colores_clusters, s=50, alpha=0.5)
 #Graficamos los centroides
@@ -129,7 +123,12 @@ plt.ylabel(iris.feature_names[1])
 plt.title(f'K-means Clustering')
 plt.show()
 
+#Tomamos los valores del dataset original y graficamos
+colores_clusters = [diccionario_colores[i] for i in iris.target]
 plt.scatter(iris_df.iloc[:, 0], iris_df.iloc[:, 1], c=colores_clusters, s=50, alpha=0.5)
+plt.xlabel(iris.feature_names[0])
+plt.ylabel(iris.feature_names[1])
+plt.title(f'Iris Species \n{iris.target_names}')
 plt.show()
 ########################## FIN GRAFICAS ###############################
 
